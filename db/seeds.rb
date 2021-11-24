@@ -6,7 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+20.times do
+  User.create(email: Faker::Internet.safe_email,
+              first_name: Faker::Name.first_name,
+              last_name: Faker::Name.last_name,
+              password: 'Crowd2021')
 
-20.each_with_index do |_param, index|
-  User.create(email: "example_#{index}@gmail.com", first_name: "First", last_name: "Last")
 end

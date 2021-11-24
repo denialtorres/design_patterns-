@@ -8,4 +8,8 @@ class User < ApplicationRecord
 
   has_many :notifications, as: :recipient
   has_many :services
+
+  def full_name
+    "#{first_name} #{last_name}"
+  end
 end
