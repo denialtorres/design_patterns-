@@ -1,8 +1,8 @@
 <h1>Welcome to Jumpstart!</h1>
 <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
 
-<% User.all.each do |user| %>
+<% @user_decorators.each do |user_decorator| %>
   <div>
-    <%= user.full_name %>
+    <%= user_decorator.name %> <%= user_decorator.staff_badge %>
   </div>
 <% end %>
