@@ -67,4 +67,5 @@ gem 'pundit', '~> 2.1'
 gem 'sidekiq', '~> 6.2'
 gem 'sitemap_generator', '~> 6.1'
 gem 'whenever', require: false
+gem "will_paginate"
 gem 'responders', github: 'heartcombo/responders', branch: 'main'
